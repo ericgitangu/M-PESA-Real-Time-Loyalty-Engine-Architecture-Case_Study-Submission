@@ -656,7 +656,7 @@ The system implements a hybrid consistency model balancing financial accuracy wi
 #### REST vs gRPC Implementation Strategy
 External partner APIs use REST for broad compatibility, easier debugging, self-documenting nature through OpenAPI specifications, and straightforward integration regardless of partner technical sophistication. Internal service communication leverages gRPC for superior performance in high-frequency communication, strong typing preventing integration errors, built-in streaming capabilities for real-time updates, and binary protocol reducing bandwidth and parsing overhead.
 
-Performance characteristics show gRPC achieving approximately 60% better throughput than REST for equivalent workloads, with lower CPU utilization and memory footprint. However, REST integration requires significantly less development time for external partners.
+Performance characteristics show gRPC achieving significantly better throughput than REST for equivalent workloads, with lower CPU utilization and memory footprint. However, REST integration requires significantly less development time for external partners.
 
 #### Native SDK vs REST API Strategy
 Mobile SDKs provide sophisticated offline capabilities including secure local caching with platform-native encryption, intelligent retry logic with exponential backoff, comprehensive error handling with user-friendly messages, and offline queue management for deferred processing. REST APIs offer platform-agnostic integration with straightforward implementation, direct HTTP integration flexibility, and reduced maintenance overhead for partners preferring simple integration.
